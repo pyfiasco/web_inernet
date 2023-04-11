@@ -4,48 +4,59 @@
 <head>
     <title>CSS</title>
     <meta charset="utf-8">
-    <style>
-           
-        a {
-            color:goldenrod;
-            text-decoration:none;
-        }
-        #activate {
-            color:red
-        }
-        .saw {
-            color:gray;
-        }     
-        h1 {
-            font-size:45px;
-            text-align:center;
-        }
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
-    <ul>
-        <li><a href="HTML.html" class="saw">HTML</a></li>
-        <li><a href="CSS.html" class="saw" id="activate">CSS</a></li>
-        <li><a href="JavaScript.html">JavaScript</a></li>
-        <li><a href="WebServer.html">web server</a></li>
-    </ul>
-    <h2 style="margin-top:45">CSS</h2>
-    <p>
-        Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a
-        markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML).[1] CSS is a cornerstone
-        technology of the World Wide Web, alongside HTML and JavaScript.[2]
-    </p><br>
-    <h2 style="margin-top:45">css문법구조</h2>
-    <img src="css문법구조.jpg" alt="css문법구조">
-    <h2 style="margin-top:90">selector 포함 관계</h2>
-    <li><strong>요소 > class > id</strong></li>
-    <h2 style="margin-top:45px">box model</h2>
-    <li><a href="C:\web_internet\box.html">box model 정리</a></li>
-    <h2 style="margin-top:45px">웹페이지 검사 기능 사용하라!</h2>
-    
+    <div id="grid">
+        <ul>
+            <li><a href="HTML.html" class="saw">HTML</a></li>
+            <li><a href="CSS.html" class="saw" id="activate">CSS</a></li>
+            <li><a href="JavaScript.html">JavaScript</a></li>
+            <li><a href="WebServer.html">web server</a></li>
+        </ul>
+        <div class="grid2">
+            <h2 style="margin-top:45">CSS</h2>
+            <p>
+                Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a
+                markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML).[1] CSS is a cornerstone
+                technology of the World Wide Web, alongside HTML and JavaScript.[2]
+            </p><br>
+            <h2 style="margin-top:45">css문법구조</h2>
+            <img src="css문법구조.jpg" alt="css문법구조">
+            <h2 style="margin-top:90">selector 포함 관계</h2>
+            <li><strong>요소 > class > id</strong></li>
+            <h2 style="margin-top:45px">box model</h2>
+            <li><a href="C:\web_internet\box.html">box model 정리</a></li>
+            <h2 style="margin-top:45px">웹페이지 검사 기능 사용하라!</h2>
+            <h2 style="margin-top:45px">grid 기능을 사용하라!</h2>
+            <a href="greed.html" >grid test</a>
+            <P>
+                <ol>
+                    <li>
+                        div, span을 이용하여 영역 지정
+                    </li>
+                    <li>
+                        style 적용
+                    </li>
+                    <span>
+                        #grid{<br>
+                        display:grid;<br>
+                        grid-template-columns: 150px 3fr; <br>
+                        }                        
+                    </span>
+                   
+                </ol>
+
+            </P>
+            <h2 style="margin-top:45px">반응형 Web 만들기 - 미디어 쿼리</h2>
+            @media(max-width:800px){최대폭보다 적을 때 구동 style 작성} 
+
+        </div>        
+    </div>
+
+
 
 </body>
 
