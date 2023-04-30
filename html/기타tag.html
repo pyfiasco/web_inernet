@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    table, td,th{
+        border: 1px,solid,gray;
+        border-collapse: collapse;
+        border-bottom: 1px solid #DDD;
+    }
+    tr:nth-child(even) {
+        background-color: rgba(150, 212, 212, 0.4);
+    }
+
+    td:hover {
+        background-color: #eee0d6;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기타 Tag</title>
+</head>
+<body>
+    <h3 style="margin-top: 40px;">의미론적 tag</h3>
+    <p>기타 의미론적 테그</p>
+    <table >
+        <thead>
+                <th>항목</th><th>내용</th>
+        </thead>
+        <tbody>            
+            <tr><td>article </td> <td>본문</td></tr>
+            <tr><td>aside </td> <td>광고와 같이 페이지의 내용과는 관계가 적은 내용들</td></tr>
+            <tr><td>details </td> <td>기본적으로 표시되지 화면에 표시되지 않는 정보들을 정의</td></tr>
+            <tr><td>figure </td> <td>삽화나 다이어그램과 같은 부가적인 요소를 정의</td></tr>
+            <tr><td>footer </td> <td>화면의 하단에 위치하는 사이트나 문서의 전체적인 정보를 정의</td></tr>
+            <tr><td>header </td> <td>화면의 상단에 위치하는 사이트나 문서의 전체적인 정보를 정의</td></tr>
+            <tr><td>main </td> <td>문서에서 가장 중심이 되는 컨텐츠를 정의</td></tr>
+            <tr><td>mark </td> <td>참조나 하이라이트 표시를 필요로 하는 문자를 정의</td></tr>
+            <tr><td>nav</td> <td>문서의 네비게이션 항목을 정의</td></tr>
+            <tr><td>section </td> <td>문서의 구획들을 정의 (참고)</td></tr>
+            <tr><td>time </td> <td>시간을 정의</td>  </tr>
+        </tbody>
+
+     
+    </table>
+    <h3 style="margin-top: 40px;">youtube 삽입</h3>
+    <p>Youtube 공유 > 퍼가기 > 웹페이지에서 코드 첨부</p>
+    <p>동영상 보안문제 : sandbox 속성 추가 필요(원천적 차단)</p>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/6Y8PpdMb6BI" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen >  <!-- sandbox속성 추가하여 보안 설정 가능 -->
+    </iframe>
+    <h3 style="margin-top: 40px;">video 삽입</h3>
+    <p>동영상 파일 삽입- 브라우저마다 지원형식이 다르므로 여러형식을 동시에 삽입하라!!!</p>
+    <video controls width="500"><!-- 컨트롤러 가능, 너비지정 -->
+        <source src=http://techslides.com/demos/sample-videos/small.webm type=video/webm>
+        <source src=http://techslides.com/demos/sample-videos/small.ogv type=video/ogg>
+        <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
+        <source src=http://techslides.com/demos/sample-videos/small.3gp type=video/3gp>
+    </video>
+
+</body>
+</html>

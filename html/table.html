@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #DDD;
+    }
+
+    tr:nth-child(odd) {
+        background-color: rgba(150, 212, 212, 0.4);
+    }
+
+    td:hover {
+        background-color: #eee0d6;
+    }
+
+    th {
+        background-color: rgb(170, 166, 166);
+    }
+</style>
+<head >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <h1 >Zebra Striped Table</h1>
+    <p style="border-spacing:10px">
+        For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:
+    </p>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Points</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+        </tr>
+    </table> 
+
+    
+</body>
+</html>

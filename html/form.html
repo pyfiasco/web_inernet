@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+<form action="" method="post">
+    <p><label>아이디 : <input type="text" name="id" value="ID입력"></label></p>
+    <p><label>비밀번호 : <input type="password" name="pwd"></label></p>
+    <p><label>주소 : <input type="text" name="address" value="주소입력"></label></p>
+    <label><p>default value : </p><textarea  cols="100%" rows="5"></textarea></label>
+    <p><input type="submit" value="전송"></p>
+
+</form>
+<h1 style="margin-top: 50px;">option</h1>
+<form action="" method="">
+    <label for = "color">color :</label> 
+    <select name="color" id="color" >
+        <option value="red">red</option>
+        <option value="blue">blue</option> 
+        <option value="black">black</option>         
+    </select>
+    <input type="submit">
+    </label>
+
+</form>
+
+<h1 style="margin-top: 50px;">radio / checkbox</h1>
+<form action="">
+    <h2 style="margin-top: 40px;">redio button(select: 1)</h2>
+    <label>red :<input type="radio" name="color" value="red" checked></label>
+    <label>blue :<input type="radio" name="color" value="blue" > </label> 
+    <label>black :<input type="radio" name="color" value="black" >  </label> 
+    <input type="button" value="제출" onclick="alert('hello html')"> 
+
+</form>
+
+<form>
+    <h2 style="margin-top: 40px;">checkbox(select: 다중)</h2>    
+    <label for="color1">red</label> :<input id="color1" type="checkbox" name="color2" value="red" checked>
+    <label for="color2">blue</label> :<input id="color2"type="checkbox" name="color2" value="blue" checked>  
+    <label for="color3">black</label>  :<input id="color3"type="checkbox" name="color2" value="black" >  
+    <input type="reset" value="재설정">
+    <input type="hidden" name="select" value="color">    
+    <button >확인</button>     
+</form>
+
+<form action="localhost/print.py" enctype="multipart/form-data">
+    <h2 style="margin-top: 40px;">file</h2>
+    <label for="color11">file</label>: <input id="color11" type="file" name="color11" >
+    <button>확인</button>
+</form>
+
+</body>
+</html>
+
